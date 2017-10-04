@@ -90,8 +90,8 @@ project(':acmeair-as') {
         options.compilerArgs << modulePath
         options.compilerArgs << '--add-reads'
         options.compilerArgs << 'acmeair.as=ALL-UNNAMED'
-	options.compilerArgs << '--add-reads'
-	options.compilerArgs << 'acmeair.services=ALL-UNNAMED'
+        options.compilerArgs << '--add-reads'
+        options.compilerArgs << 'acmeair.services=ALL-UNNAMED'
     }
 
     dependencies {
@@ -209,9 +209,9 @@ project(':acmeair-services-mongo') {
         options.compilerArgs << 'acmeair.services.mongo=ALL-UNNAMED'
     }
     dependencies {
-	compile project(':acmeair-services')
-	compile 'org.mongodb:mongo-java-driver:3.1.1'
-	compile 'org.mongodb:bson:3.1.1'
+        compile project(':acmeair-services')
+        compile 'org.mongodb:mongo-java-driver:3.1.1'
+        compile 'org.mongodb:bson:3.1.1'
         compile 'com.googlecode.json-simple:json-simple:1.1.1'
     }
 }
@@ -243,7 +243,3 @@ project(':acmeair-loader') {
         compile project(':acmeair-services')
     }
 }
-
-
-
-
